@@ -16,8 +16,8 @@ import cn.z.id.Id;
 public class IdTest {
 
     public static void main(String[] args) {
-        test();
-        // init();
+//        test();
+         init();
         // initMore();
         // initLate();
         // initException();
@@ -38,7 +38,7 @@ public class IdTest {
      * 初始化
      */
     static void init() {
-        Id.init(0, 8, 12);
+        Id.init(0, 19, 12);
         System.out.println("ID为：" + Id.next());
         // [main] INFO cn.z.id.Id - 开始初始化，MACHINE_ID为0，MACHINE_BITS为8，SEQUENCE_BITS为12
         // ID为：10566962677547008
@@ -72,12 +72,12 @@ public class IdTest {
      * 初始化异常
      */
     static void initException() {
-        Id.init(0, 8, 120);
+        Id.init(1000, 8, 12);
         System.out.println("ID为：" + Id.next());
-        // [main] INFO cn.z.id.Id - 开始初始化，MACHINE_ID为0，MACHINE_BITS为8，SEQUENCE_BITS为120
-        // [main] ERROR cn.z.id.Id - 序列号位数SEQUENCE_BITS需要>=0并且<=64。当前为120
-        // [main] ERROR cn.z.id.Id - 时间戳分配的位数过小，需要SEQUENCE_BITS+MACHINE_BITS<=28。当前为128
-        // ID为：10567790691876864
+        // [main] INFO cn.z.id.Id -
+        // 开始初始化，MACHINE_ID为1000，MACHINE_BITS为8，SEQUENCE_BITS为12
+        // [main] ERROR cn.z.id.Id - 机器码MACHINE_ID需要>=0并且<=255。当前为1000
+        // ID为：2687454335107072
     }
 
     /**
