@@ -38,7 +38,7 @@ public class IdTest {
      * 初始化
      */
     static void init() {
-        Id.init(0, 19, 12);
+        Id.init(0, 8, 22);
         System.out.println("ID为：" + Id.next());
         // [main] INFO cn.z.id.Id - 开始初始化，MACHINE_ID为0，MACHINE_BITS为8，SEQUENCE_BITS为12
         // ID为：10566962677547008
