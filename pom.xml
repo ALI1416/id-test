@@ -8,7 +8,7 @@
   <version>1.0.0</version>
 
   <name>IdTest</name>
-  <description>High performance ID generator test</description>
+  <description>High performance snowflake ID generator test</description>
   <url>https://github.com/ALI1416/id-test</url>
 
   <properties>
