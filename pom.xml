@@ -7,13 +7,14 @@
   <artifactId>id-test</artifactId>
   <version>1.0.0</version>
 
-  <name>IdTest</name>
-  <description>High performance snowflake ID generator test</description>
+  <name>Id Test</name>
+  <description>High performance snowflake ID generator test 高性能雪花ID生成器测试</description>
   <url>https://github.com/ALI1416/id-test</url>
 
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <jdk.version>1.8</jdk.version>
+    <maven.compiler.source>${jdk.version}</maven.compiler.source>
+    <maven.compiler.target>${jdk.version}</maven.compiler.target>
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

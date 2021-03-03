@@ -19,8 +19,8 @@ import java.util.UUID;
 public class IdTest {
 
     public static void main(String[] args) {
-        test();
-        // init();
+//        test();
+         init();
         // initMore();
         // initLate();
         // initException();
@@ -144,7 +144,7 @@ public class IdTest {
     }
 
     /**
-     * 回拨(需要在1分钟内手动回拨时钟)
+     * 时钟回拨(需要在1分钟内手动回拨时钟)
      */
     static void back() {
         for (int i = 0; i < 60; i++) {
@@ -193,13 +193,13 @@ public class IdTest {
         /*1亿次*/
         compare(100000000);
         // 高性能雪花Id生成器调用100000000次使用时间为：909毫秒
-        // Random调用100000000次使用时间为：2034毫秒
+        // Random调用100000000次使用时间为：793毫秒
         // UUID调用100000000次使用时间为：83628毫秒
         // 调用100000000次，高性能雪花Id生成器比UUID性能高92.0倍
         /*21亿次*/
         compare(Integer.MAX_VALUE);
         // 高性能雪花Id生成器调用2147483647次使用时间为：37871毫秒
-        // Random调用2147483647次使用时间为：38886毫秒
+        // Random调用2147483647次使用时间为：36886毫秒
         // UUID调用2147483647次使用时间为：7915039毫秒
         // 调用2147483647次，高性能雪花Id生成器比UUID性能高209.0倍
     }
