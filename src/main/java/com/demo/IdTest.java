@@ -19,8 +19,8 @@ import java.util.UUID;
 public class IdTest {
 
     public static void main(String[] args) {
-//        test();
-         init();
+       test();
+        // init();
         // initMore();
         // initLate();
         // initException();
